@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    int userInput, firstVar, secondVar, thirdVar;
+   
+    cout << "Enter an integer between 0 an 999: ";
+    cin >> userInput;
+    
+    firstVar = userInput % 10;
+    cout << "1’s digit is: "  << firstVar << endl;
+    secondVar = userInput % 100;
+    secondVar = secondVar / 10;
+    cout <<"10’s digit is: "  << secondVar << endl;
+    thirdVar = userInput / 100;
+    cout << "100’s digit is: " << thirdVar << endl;    
+    
+    
+    
+    return 0;
+}
